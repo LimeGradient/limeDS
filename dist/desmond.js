@@ -3819,7 +3819,7 @@ registerProcessor('my-worklet', MyAudioWorklet)`], {type: "text/javascript"}))).
           return false;
       }
       var wasmBinaryFile;
-      wasmBinaryFile = window.desmondWASM.getWASM();
+      wasmBinaryFile = "dist/desmond.wasm";
       if (!isDataURI(wasmBinaryFile)) {
           wasmBinaryFile = locateFile(wasmBinaryFile);
       }
